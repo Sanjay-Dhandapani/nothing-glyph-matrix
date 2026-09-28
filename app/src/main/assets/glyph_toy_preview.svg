@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Spider-man Glyph Toy Preview</title>
+  <desc id="desc">A 512 by 512 preview image with a red Glyph-style grid and a spider emblem.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14161b"/>
+      <stop offset="100%" stop-color="#090a0d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a0b10"/>
+      <stop offset="100%" stop-color="#0d0506"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#f4d9db" stroke-opacity="0.15" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.8  0 1 0 0 0.05  0 0 1 0 0.12  0 0 0 1 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <g opacity="0.9">
+    <circle cx="256" cy="256" r="190" fill="#110708" opacity="0.85"/>
+    <circle cx="256" cy="256" r="190" fill="url(#grid)"/>
+    <rect x="92" y="92" width="328" height="328" rx="36" fill="url(#panel)" stroke="#ffd9db" stroke-opacity="0.18" stroke-width="2"/>
+    <rect x="92" y="92" width="328" height="328" rx="36" fill="url(#grid)"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <path d="M256 126c-54 0-97 38-97 86 0 34 19 64 49 81-2 14-11 38-32 58-10 10-13 26-7 39 5 11 16 18 29 18 46 0 79-36 94-59 15 23 48 59 94 59 13 0 24-7 29-18 6-13 3-29-7-39-21-20-30-44-32-58 30-17 49-47 49-81 0-48-43-86-97-86-15 0-29 3-42 8-13-5-27-8-42-8z" fill="#d51c2d"/>
+    <path d="M256 146c-43 0-77 28-77 66 0 28 17 52 43 65-8 13-19 28-32 40-10 9-12 20-8 27 4 8 11 12 20 12 38 0 66-27 80-49 14 22 42 49 80 49 9 0 16-4 20-12 4-7 2-18-8-27-13-12-24-27-32-40 26-13 43-37 43-65 0-38-34-66-77-66-13 0-26 3-38 9-12-6-25-9-38-9z" fill="#a40d1e" opacity="0.8"/>
+  </g>
+
+  <g transform="translate(0 6)">
+    <path d="M224 224c-18 0-32-13-32-30 0-15 10-27 24-30 5 15 8 33 8 60z" fill="#f6f2f3"/>
+    <path d="M288 224c18 0 32-13 32-30 0-15-10-27-24-30-5 15-8 33-8 60z" fill="#f6f2f3"/>
+    <path d="M214 228c13 4 25 11 42 24 17-13 29-20 42-24-7 24-22 47-42 60-20-13-35-36-42-60z" fill="#140608"/>
+    <path d="M196 203c14 0 26 7 32 16-13 5-24 11-33 19-9-8-14-21-14-35 5 0 9 0 15 0z" fill="#8a0716"/>
+    <path d="M316 203c-14 0-26 7-32 16 13 5 24 11 33 19 9-8 14-21 14-35-5 0-9 0-15 0z" fill="#8a0716"/>
+  </g>
+
+  <g stroke="#ff8d93" stroke-width="4" stroke-linecap="round" opacity="0.58">
+    <path d="M256 94v46"/>
+    <path d="M256 372v46"/>
+    <path d="M94 256h46"/>
+    <path d="M372 256h46"/>
+  </g>
+
+  <g opacity="0.5">
+    <circle cx="144" cy="144" r="10" fill="#ffd9db"/>
+    <circle cx="368" cy="144" r="10" fill="#ffd9db"/>
+    <circle cx="144" cy="368" r="10" fill="#ffd9db"/>
+    <circle cx="368" cy="368" r="10" fill="#ffd9db"/>
+  </g>
+</svg>

@@ -16,7 +16,8 @@ What it does:
 3. If the release asset is not visible, clone the repo or download the source ZIP from GitHub and extract the AAR from the repository root.
 4. Open the project in Android Studio and sync Gradle.
 5. Install the app on a Nothing Phone (4a) Pro running Android 14 or newer.
-6. Replace `app/src/main/assets/spider_man.json` if you want a different animation.
+6. Use `app/src/main/assets/glyph_toy_preview.svg` when the submission form asks for an image preview.
+7. Replace `app/src/main/assets/spider_man.json` if you want a different animation.
 
 ## Design format
 
@@ -30,3 +31,4 @@ The app now consumes the exported animated JSON format directly.
 - The manifest is already configured for the Nothing permission and the AOD toy service.
 - The starter uses the `com.nothing.ketchum` SDK namespace from the official docs.
 - If you want a different design, export a new JSON file in the same format and replace `spider_man.json`.
+- The SVG preview is the image fallback for the Playground upload step when JSON is not accepted.
