@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nothing Glyph Matrix</string>
+    <string name="app_intro">This starter plays the Spider-man JSON animation on the Nothing Phone (4a) Pro Glyph Matrix.</string>
+    <string name="preview_description">Glyph Matrix preview</string>
+    <string name="open_toys_manager">Open Glyph Toys manager</string>
+    <string name="refresh_preview">Refresh preview</string>
+    <string name="preview_refreshed">Preview refreshed</string>
+    <string name="manager_not_available">Could not open the Glyph Toys manager on this device.</string>
+    <string name="toy_name">Spider-man Glyph Toy</string>
+    <string name="toy_summary">An animated Spider-man Glyph Toy for the Nothing Phone (4a) Pro.</string>
+</resources>
