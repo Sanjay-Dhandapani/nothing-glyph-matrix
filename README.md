@@ -6,7 +6,7 @@ What it does:
 
 - Targets the 13x13 Matrix path for the Phone (4a) Pro
 - Registers an AOD-only Glyph Toy with `DEVICE_25111p`
-- Loads the Spider-man animation from `app/src/main/assets/spider_man.json`
+- Loads the Spider-man mask animation from `app/src/main/assets/spider_mask.json`
 - Shows a live preview inside the app and a shortcut to the Glyph Toys manager
 
 ## What you need to run it
@@ -17,7 +17,19 @@ What it does:
 4. Open the project in Android Studio and sync Gradle.
 5. Install the app on a Nothing Phone (4a) Pro running Android 14 or newer.
 6. Use `app/src/main/assets/glyph_toy_preview.svg` when the submission form asks for an image preview.
-7. Replace `app/src/main/assets/spider_man.json` if you want a different animation.
+7. Replace `app/src/main/assets/spider_mask.json` if you want a different mask animation.
+
+## Live preview
+
+Open `preview/index.html` through a local server to see the glyph animation in the browser.
+
+Example:
+
+```powershell
+python -m http.server 8000 -d "D:\PROJECTS AND FILES\NOTHING GLYPH"
+```
+
+Then open `http://localhost:8000/preview/`.
 
 ## Design format
 
@@ -30,5 +42,6 @@ The app now consumes the exported animated JSON format directly.
 
 - The manifest is already configured for the Nothing permission and the AOD toy service.
 - The starter uses the `com.nothing.ketchum` SDK namespace from the official docs.
-- If you want a different design, export a new JSON file in the same format and replace `spider_man.json`.
+- The browser preview now maps pixel intensity into mask shading so the blinking eyes are visible on the live server.
+- If you want a different design, export a new JSON file in the same format and replace `spider_mask.json`.
 - The SVG preview is the image fallback for the Playground upload step when JSON is not accepted.

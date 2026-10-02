@@ -5,7 +5,7 @@ import org.json.JSONObject
 
 object GlyphAnimationLoader {
 
-    private const val ASSET_FILE = "spider_man.json"
+    private const val ASSET_FILE = "spider_mask.json"
 
     fun load(context: Context): GlyphAnimation {
         val jsonText = context.assets.open(ASSET_FILE).bufferedReader().use { it.readText() }
